@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fff;
+}
+.air-block-lg{
+    margin-top: 100px;
+}
+/* Font Connect */
+@font-face {
+	font-family: 'Genshin'; 
+	src: url(../fonts/Genshin_Impact.ttf); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Segoe UI';
+	src: url(../fonts/SegoeUI.ttf); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
+
+.header-wrapper{
+    max-width: 1400px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav{
+    margin-left: 60px;
+}
+.header-menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 650px;
+}
+
+.header-menu-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    /* Ширина между элементами навбара */
+    margin-right: 35px;
+    line-height: 22px;
+    cursor: pointer;
+
+}
+.header-menu-link-sign{
+    color: #ffffff;
+    padding-top: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 2px;
+    border: 2px solid #007bff;
+    border-radius: 3px;
+    font-size: 18px;
+}
+.header-menu-link-sign:hover {
+    background-color: #e0ffff;
+}
+
+.navbar-main-text {
+    font-family: 'Genshin';
+}
+.nav-text, svg {
+    font-family: 'Genshin';
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+
+    transition: 0.2s;
+}
+.navbar-svg {
+    transform: rotate(180deg);
+}
+.nav-text:hover svg {
+    transform: rotate(0deg);
+}
+
+/* Navbar li ul */
+
+.navbar-li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 40px;
+
+    transition: all .2s;
+}
+.navbar-li li {
+    list-style: none;
+    position: relative;
+
+}
+.navbar-li {
+    display: flex;
+
+}
+.navbar-li ul{
+    position: fixed;
+    left: -4rem;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+.navbar-li li:hover ul{
+    display: block;
+    width: 15rem;
+    border-radius: 22px;   
+     
+}
+.navbar-li-btn {
+    color: #fff;
+    background: #232323;
+    font-family: 'Genshin';
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 5px;
+
+    transition: 0.2s;
+}
+.navbar-li-btn:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.colums {
+    height: auto;
+    width: auto;
+    margin: 20px;
+    padding: 30px;
+    background: #fff;
+
+    border: 1px solid;
+    border-radius: 22px;
+    /* box-shadow: 12px 12px 2px 1px rgba(236, 172, 100, 0.507); */
+    box-shadow: 12px 12px 2px 1px #b6effc;
+    
+}
+/* Slider */
+#slider-next-path-banner{
+    position: relative;
+    display: flex;
+    left: 0;
+    width: auto;
+    height: auto;
+
+    transition: all ease 0.5s;
+
+}
+#slider{
+    position: relative;
+    display: flex;
+    left: 0;
+    width: auto;
+    height: auto;
+
+    transition: all ease 0.5s;
+
+}
+#slider-line {
+    margin-left: 100px;
+}
+/* https colums style */
+.header-https {
+    border: 1px solid;
+    border-radius: 14px;
+
+    padding: 15px;
+    margin-bottom: 3em;
+}
+.header-https p{
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+/* Banner styles */
+.banner-btn {
+    display: flex;
+    border-bottom: 1px solid;
+}
+.banner-btn a{
+    font-family: 'Genshin';
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+
+    padding: 10px;
+    margin: -5px 25px 15px 10px;
+
+
+    transition: 0.2s;
+}
+.banner-btn a:hover {
+    color: #000;
+    border-radius: 12px;
+    /* background: rgba(236, 172, 100, 0.507); */
+    background: #b6effc85;
+}
+
+.banner-btn-skip {
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-btn-skip a{
+    font-family: 'Genshin';
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+
+    padding: 10px;
+    margin: -5px 25px 15px 10px;
+
+
+    transition: 0.2s;
+}
+.banner-btn-skip a:hover {
+    color: #000;
+    border-radius: 12px;
+    /* background: rgba(236, 172, 100, 0.507); */
+    background: #b6effc85;
+}
+
+.banner-head-text {
+    font-family: 'Genshin';
+    font-size: 50px;
+
+    display: flex;
+}
+.banner-head-text p{
+    padding-top: 6%;
+}
+.banner-body-text {
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 16px;
+
+    padding-right: 20px;
+}
+
+/* Element color colums */
+.dendro {
+    box-shadow: 12px 12px 2px 1px #b6fccd9d;
+}
+.hydro {
+    box-shadow: 12px 12px 2px 1px rgba(182, 218, 252, 0.548);
+}
+.electro {
+    box-shadow: 12px 12px 2px 1px rgba(226, 182, 252, 0.548);
+}
+#elements-id {
+    overflow: hidden;
+}
+
+/* left side elements of text */
+.left-side-title {
+    font-family: 'Genshin';
+    font-size: 30px;
+}
+.left-side-description {
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* right side elements of btn */
+.right-side-title {
+    font-family: 'Genshin';
+    font-size: 25px;
+}
+.right-side-button {
+    display: grid;
+    margin-bottom: 20px;
+    padding: -10px;
+}
+.right-side-button a{
+    font-family: 'Genshin';
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+
+    border-radius: 10px;
+    padding: 10px;
+
+    transition: 0.2s;
+}
+.right-side-button a:hover {
+    color: #000;
+    background: #b6effc85;
+}
+.right-side-button svg {
+    transition: 0.2s;
+    transform: rotate(90deg);
+}
+.right-side-button-svg:hover svg {
+    transition: 0.2s;
+    transform: rotate(270deg);
+}
+/* footer */
+.footer {
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 8px;
+
+}
+/* __________________________________________________________________ characters wiki ________________________________________________________________________________*/
+
+.left-side-characters {
+    display: flex;
+    height: 130px;
+    width: 106px;
+    border-radius: 8px;
+    border: 1px solid;
+    overflow: hidden;
+    background: #ffffff;
+    margin-top: 16px;
+
+    transition: 0.2s;
+}
+.left-side-characters:hover {
+    box-shadow: 6px 6px 2px 1px #b6effc;
+}
+.left-side-characters a {
+    text-decoration: none;
+    font-family: 'Genshin';
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+}
+.left-side-characters a:hover {
+    color: #000000;
+}
+.left-side-characters img{
+    border-radius: 8px;
+    border-bottom: 1px solid;
+}
+
+.left-side-sticker {
+    font-family: 'Genshin';
+    position: absolute;
+    border: 0.125em solid rgb(240 196 56 / 75%);
+    background: rgb(203 130 14 / 75%);
+    color: #ffff80;
+    padding: 0.1875em 0.1875em 0.125em;
+    font-size: 0.875em;
+    line-height: 1;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.375rem rgb(240 196 56);
+    margin-left: 58px;
+    margin-top: -5px;
+}
+.left-side-sticker:before, .left-side-sticker:after {
+    position: absolute;
+    display: block;
+    background: url(../images/star.svg) center center no-repeat;
+    background-size: contain;
+}
+.left-side-sticker:before {
+    bottom: -0.375em;
+    left: -0.375em;
+    width: 0.625em;
+    height: 0.625em;
+}
+.left-side-sticker:after {
+    top: -0.4375em;
+    right: -0.4375em;
+    width: 0.75em;
+    height: 0.75em;
+}
+/* rare background */
+
+.legend-background {
+    background: url(../images/legend-bg.jpg) no-repeat;
+    height: max-content;
+    border-radius: 7px;
+    width: 106px;
+}
+.epic-background {
+    background: url(../images/epic-bg.jpg) no-repeat;
+    height: max-content;
+    border-radius: 7px;
+    width: 106px;
+}
+
+/* elements styles */
+.elements-geo {
+    background-image: url(../images/elements/mini-geo.png);
+    position: absolute;
+    width: 1.75em;
+    height: 1.75em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elements-hydro {
+    background-image: url(../images/elements/mini-hydro.png);
+    position: absolute;
+    width: 1.75em;
+    height: 1.75em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elements-anemo {
+    background-image: url(../images/elements/mini-anemo.png);
+    position: absolute;
+    width: 1.75em;
+    height: 1.75em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elements-cryo {
+    background-image: url(../images/elements/mini-cryo.png);
+    position: absolute;
+    width: 1.75em;
+    height: 1.75em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elements-pyro {
+    background-image: url(../images/elements/mini-pyro.png);
+    position: absolute;
+    width: 1.75em;
+    height: 1.75em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elements-electro {
+    background-image: url(../images/elements/mini-electro.png);
+    position: absolute;
+    width: 1.75em;
+    height: 1.75em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elements-dendro {
+    background-image: url(../images/elements/mini-dendro.png);
+    position: absolute;
+    width: 1.75em;
+    height: 1.75em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.d-none {
+    display: none;
+  }
+.d-flex {
+    display: block;
+}
+/*__________________________________________________________________________artifacts styles____________________________________________________________________________ */
+
+.left-side-artifact-animation-25 p {
+    display: flex;
+    position: relative;
+    background: white;
+    width: 104px;
+
+    transition: 0.2s;
+}
+.left-side-artifact-animation-25:hover p{
+    margin-top: -25px;
+    border-radius: 6px;
+    border-top: 1px solid;
+}
+.left-side-artifact-animation-42 p {
+    display: flex;
+    position: relative;
+    width: 104px;
+    background: white;
+
+    transition: 0.2s;
+}
+.left-side-artifact-animation-42:hover p{
+    margin-top: -42px;
+    border-radius: 6px;
+    border-top: 1px solid;
+}
+.left-side-description-top{
+    margin-top: 16px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 16px;
+}
+.left-side-title-25{
+    font-family: 'Genshin';
+    font-size: 25px;
+}
